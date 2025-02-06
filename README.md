@@ -1,8 +1,4 @@
-Here's a **README** section for your project, including how to use the API and set up the system:
-
----
-
-# **Student Management System - README**
+# **Student Management System**
 
 ## **Overview**
 
@@ -23,8 +19,8 @@ This is a Student Management System built using **React** for the frontend and *
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-repo/student-management-system.git
-    cd student-management-system
+    git clone https://github.com/sankethanse/Student_Manage.git
+    cd ./frontend
     ```
 
 2. Install the necessary dependencies:
@@ -36,34 +32,34 @@ This is a Student Management System built using **React** for the frontend and *
     ```bash
     npm start
     ```
-    The app will be available at `http://localhost:3000`.
+    The app will be available at `http://localhost:5174`.
 
 ---
 
 ## **Backend Setup**
 
-### **1. Clone the Repository**
-
-```bash
-git clone https://github.com/your-repo/student-management-system-backend.git
-cd student-management-system-backend
-```
-
-### **2. Set Up MySQL Database**
+### **1. Set Up MySQL Database**
 
 1. Create a database in MySQL:
     ```sql
-    CREATE DATABASE student_management;
+    CREATE DATABASE student_db;
     ```
 
 2. Update your `application.properties` with your MySQL credentials:
     ```properties
-    spring.datasource.url=jdbc:mysql://localhost:3306/student_management
+    spring.datasource.url=jdbc:mysql://localhost:3306/student_db
     spring.datasource.username=root
-    spring.datasource.password=your-password
+    spring.datasource.password= "Put your password"
+    spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+
+    spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
+    spring.jpa.hibernate.ddl-auto=update
+    spring.jpa.show-sql=true
+
     ```
 
-### **3. Run the Spring Boot Application**
+### **2. Run the Spring Boot Application**
 
 1. Build the application (if using Maven):
     ```bash
