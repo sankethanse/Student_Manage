@@ -195,20 +195,6 @@ This is a Student Management System built using **React** for the frontend and *
 }
 ```
 
----
-
-## **Contributing**
-
-If you'd like to contribute to this project, please fork the repository and create a pull request with your proposed changes.
-
----
-
-## **License**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## **Final Notes**
 
 - Ensure you have **Java 11** or higher for running the Spring Boot application.
